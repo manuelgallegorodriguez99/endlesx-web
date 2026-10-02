@@ -18,6 +18,12 @@ dominio `endlesx.com` (archivo `CNAME`). DNS en GoDaddy. Para actualizar la web:
 cd 04-Sitio-Web && git add -A && git commit -m "Cambios" && git push
 ```
 
+## Idiomas
+- Español: `index.html` (https://endlesx.com/)
+- Inglés: `en/index.html` (https://endlesx.com/en/), traducido a mano. Usa `../assets/`.
+- El botón **EN / ES** del menú enlaza una con otra.
+- **Si cambias un texto, cámbialo en los dos archivos.**
+
 ## Ver en local
 Las fuentes no cargan abriendo el archivo con doble clic (`file://`), hay que servirlo:
 

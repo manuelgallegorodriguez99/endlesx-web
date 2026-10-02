@@ -1,0 +1,116 @@
+- generic [active] [ref=e1]:
+  - navigation "Principal" [ref=e2]:
+    - link "EndlesX, inicio" [ref=e3] [cursor=pointer]:
+      - /url: "#inicio"
+      - generic [ref=e4]: ENDLES
+    - list [ref=e9]:
+      - listitem [ref=e10]:
+        - link "Qué hacemos" [ref=e11] [cursor=pointer]:
+          - /url: "#que-hacemos"
+      - listitem [ref=e12]:
+        - link "Cómo trabajamos" [ref=e13] [cursor=pointer]:
+          - /url: "#como-trabajamos"
+      - listitem [ref=e14]:
+        - link "Contacto" [ref=e15] [cursor=pointer]:
+          - /url: "#contacto"
+      - listitem [ref=e16]:
+        - link "English version" [ref=e17] [cursor=pointer]:
+          - /url: en/
+          - text: EN
+  - main [ref=e18]:
+    - generic [ref=e20]:
+      - generic [ref=e23]:
+        - generic [ref=e24]: E
+        - generic [ref=e25]: "N"
+        - generic [ref=e26]: D
+        - generic [ref=e27]: L
+        - generic [ref=e28]: E
+        - generic [ref=e29]: S
+      - generic [ref=e34]:
+        - heading "Tu marca, sin relleno ." [level=1] [ref=e35]:
+          - text: Tu marca, sin
+          - generic [ref=e36]: relleno
+          - text: .
+        - generic [ref=e37]:
+          - paragraph [ref=e38]: "Nosotros nos encargamos de todo: tus redes sociales, tu web, tu marca y tu contenido."
+          - link "Qué hacemos" [ref=e39] [cursor=pointer]:
+            - /url: "#que-hacemos"
+    - region "Qué nos mueve" [ref=e40]:
+      - paragraph [ref=e41]:
+        - generic [ref=e42]: Tu
+        - generic [ref=e43]: marca
+        - generic [ref=e44]: "no"
+        - generic [ref=e45]: necesita
+        - generic [ref=e46]: más
+        - generic [ref=e47]: ruido.
+        - generic [ref=e48]: Necesita
+        - generic [ref=e49]: una
+        - generic [ref=e50]: idea
+        - generic [ref=e51]: clara,
+        - generic [ref=e52]: bien
+        - generic [ref=e53]: contada
+        - generic [ref=e54]: "y"
+        - generic [ref=e55]: que
+        - generic [ref=e56]: te
+        - generic [ref=e57]: represente.
+        - generic [ref=e58]: Todo
+        - generic [ref=e59]: lo
+        - generic [ref=e60]: demás
+        - generic [ref=e61]: es
+        - generic [ref=e62]: relleno
+        - generic [ref=e63]: .
+    - generic [ref=e65]:
+      - generic [ref=e66]:
+        - heading "Qué hacemos" [level=2] [ref=e67]
+        - paragraph [ref=e68]: Todo lo que tu marca necesita para verse bien en internet, hecho por el mismo equipo y con la misma idea.
+      - generic [ref=e69]:
+        - article [ref=e70]:
+          - heading "Vídeo para redes" [level=3] [ref=e73]
+          - paragraph [ref=e74]: Reels, shorts y vídeos largos editados con ritmo, para que se vean hasta el final.
+          - generic [ref=e75]: Reels / shorts / vídeo largo
+        - article [ref=e76]:
+          - heading "Páginas web" [level=3] [ref=e79]
+          - paragraph [ref=e80]: Diseño y desarrollo de webs que explican bien lo que haces y se ven bien en el móvil.
+          - generic [ref=e81]: Presupuesto según proyecto
+        - article [ref=e82]:
+          - heading "Gestión de redes" [level=3] [ref=e84]
+          - paragraph [ref=e85]: "Nos ocupamos de las redes de tu marca: qué publicar, cuándo y cómo, para que no tengas que pensar en ello."
+          - generic [ref=e86]: Instagram / TikTok / YouTube
+        - article [ref=e87]:
+          - heading "Ideas y dirección creativa" [level=3] [ref=e89]:
+            - text: Ideas y dirección
+            - generic [ref=e90]: creativa
+          - paragraph [ref=e91]: Proponemos, no solo ejecutamos. Te decimos qué contar y cómo contarlo para que tu marca se reconozca.
+          - generic [ref=e92]: Conceptos / campañas / contenido
+        - article [ref=e93]:
+          - generic [ref=e95]: ENDLES
+          - heading "Guías de marca" [level=3] [ref=e102]
+          - paragraph [ref=e103]: Colores, tipografías, logo y estilo de vídeo en un documento, para que tu marca sea siempre la misma.
+          - generic [ref=e104]: Como la nuestra
+    - generic [ref=e105]:
+      - generic [ref=e106]:
+        - heading "Cómo trabajamos" [level=2] [ref=e107]
+        - paragraph [ref=e108]: Cuatro pasos, siempre los mismos. Y el último no termina nunca.
+      - list [ref=e110]:
+        - listitem [ref=e111]:
+          - heading "Escuchamos" [level=3] [ref=e112]
+          - paragraph [ref=e113]: Cuadramos una llamada y nos cuentas tu marca, lo que haces y a quién quieres llegar.
+        - listitem [ref=e114]:
+          - heading "Proponemos" [level=3] [ref=e115]
+          - paragraph [ref=e116]: Te enseñamos una idea clara antes de ponernos a producir nada.
+        - listitem [ref=e117]:
+          - heading "Hacemos" [level=3] [ref=e118]
+          - paragraph [ref=e119]: Vídeos, web y contenido para redes, con esa idea como hilo.
+        - listitem [ref=e120]:
+          - heading "Seguimos" [level=3] [ref=e121]
+          - paragraph [ref=e122]: Publicamos, vemos qué funciona y ajustamos. Tu marca no se para.
+    - generic [ref=e123]:
+      - generic [ref=e124]:
+        - heading "¿Hablamos?" [level=2] [ref=e125]
+        - paragraph [ref=e126]: Cuadramos una llamada, nos cuentas qué necesita tu marca y te decimos cómo lo haríamos. Sin compromiso.
+        - link "Reservar llamada" [ref=e127] [cursor=pointer]:
+          - /url: mailto:hola@endlesx.com?subject=Quiero%20reservar%20una%20llamada&body=Hola%2C%20soy%20...%0A%0AMi%20marca%3A%20%0AQu%C3%A9%20necesito%20(v%C3%ADdeo%2C%20web%2C%20redes...)%3A%20%0ACu%C3%A1ndo%20me%20viene%20bien%20la%20llamada%3A%20%0AMi%20tel%C3%A9fono%3A%20
+      - generic [ref=e129]: ENDLES
+  - contentinfo [ref=e135]:
+    - generic [ref=e136]: © 2026 EndlesX
+    - generic [ref=e137]: Vídeo / Web / Redes

@@ -65,6 +65,8 @@ h2 { font-size: clamp(56px, 9vw, 150px); }
 .nav ul { list-style: none; display: flex; gap: clamp(16px, 2.4vw, 36px); font: 400 14px "DM Mono", monospace; }
 .nav ul a { text-decoration: none; padding: 6px 0; background: linear-gradient(var(--tinta), var(--tinta)) left bottom / 0 2px no-repeat; transition: background-size 200ms var(--ease-out); }
 @media (hover: hover) and (pointer: fine) { .nav ul a:hover { background-size: 100% 2px; } }
+.nav ul a.nav-lang { padding: 5px 8px; border: 1.5px solid currentColor; background: none; transition: background-color 160ms var(--ease-out), color 160ms var(--ease-out); }
+@media (hover: hover) and (pointer: fine) { .nav ul a.nav-lang:hover { background: var(--tinta); color: var(--papel); } }
 @media (max-width: 760px) { .hide-sm { display: none; } }
 
 /* ===== Cabecera ===== */

@@ -1,0 +1,110 @@
+- generic [active] [ref=f2e1]:
+  - navigation "Main" [ref=f2e2]:
+    - link "EndlesX, home" [ref=f2e3] [cursor=pointer]:
+      - /url: "#inicio"
+      - generic [ref=f2e4]: ENDLES
+    - list [ref=f2e9]:
+      - listitem [ref=f2e10]:
+        - link "Contact" [ref=f2e11] [cursor=pointer]:
+          - /url: "#contacto"
+      - listitem [ref=f2e12]:
+        - link "Versión en español" [ref=f2e13] [cursor=pointer]:
+          - /url: ../
+          - text: ES
+  - main [ref=f2e14]:
+    - generic [ref=f2e16]:
+      - generic [ref=f2e19]:
+        - generic [ref=f2e20]: E
+        - generic [ref=f2e21]: "N"
+        - generic [ref=f2e22]: D
+        - generic [ref=f2e23]: L
+        - generic [ref=f2e24]: E
+        - generic [ref=f2e25]: S
+      - generic [ref=f2e30]:
+        - heading "Your brand, no filler ." [level=1] [ref=f2e31]:
+          - text: Your brand, no
+          - generic [ref=f2e32]: filler
+          - text: .
+        - generic [ref=f2e33]:
+          - paragraph [ref=f2e34]: "We take care of everything: your social media, your website, your brand and your content."
+          - link "What we do" [ref=f2e35] [cursor=pointer]:
+            - /url: "#que-hacemos"
+    - region "What drives us" [ref=f2e36]:
+      - paragraph [ref=f2e37]:
+        - generic [ref=f2e38]: Your
+        - generic [ref=f2e39]: brand
+        - generic [ref=f2e40]: doesn’t
+        - generic [ref=f2e41]: need
+        - generic [ref=f2e42]: more
+        - generic [ref=f2e43]: noise.
+        - generic [ref=f2e44]: It
+        - generic [ref=f2e45]: needs
+        - generic [ref=f2e46]: a
+        - generic [ref=f2e47]: clear
+        - generic [ref=f2e48]: idea,
+        - generic [ref=f2e49]: well
+        - generic [ref=f2e50]: told,
+        - generic [ref=f2e51]: that
+        - generic [ref=f2e52]: represents
+        - generic [ref=f2e53]: you.
+        - generic [ref=f2e54]: Everything
+        - generic [ref=f2e55]: else
+        - generic [ref=f2e56]: is
+        - generic [ref=f2e57]: filler
+        - generic [ref=f2e58]: .
+    - generic [ref=f2e59]:
+      - generic [ref=f2e60]:
+        - heading "What we do" [level=2] [ref=f2e61]
+        - paragraph [ref=f2e62]: Everything your brand needs to look good online, made by the same team with the same idea.
+      - generic [ref=f2e63]:
+        - article [ref=f2e64]:
+          - heading "Social media video" [level=3] [ref=f2e67]
+          - paragraph [ref=f2e68]: Reels, shorts and long-form videos edited with rhythm, so people watch them to the end.
+          - generic [ref=f2e69]: Reels / shorts / long-form
+        - article [ref=f2e70]:
+          - heading "Websites" [level=3] [ref=f2e73]
+          - paragraph [ref=f2e74]: Websites designed and built to explain what you do clearly and look great on mobile.
+          - generic [ref=f2e75]: Quoted per project
+        - article [ref=f2e76]:
+          - heading "Social media management" [level=3] [ref=f2e78]
+          - paragraph [ref=f2e79]: "We run your brand’s social media: what to post, when and how, so you don’t have to think about it."
+          - generic [ref=f2e80]: Instagram / TikTok / YouTube
+        - article [ref=f2e81]:
+          - heading "Ideas and creative direction" [level=3] [ref=f2e83]:
+            - text: Ideas and
+            - generic [ref=f2e84]: creative
+            - text: direction
+          - paragraph [ref=f2e85]: We propose, not just execute. We tell you what to say and how to say it, so your brand is recognised.
+          - generic [ref=f2e86]: Concepts / campaigns / content
+        - article [ref=f2e87]:
+          - generic [ref=f2e89]: ENDLES
+          - heading "Brand guidelines" [level=3] [ref=f2e96]
+          - paragraph [ref=f2e97]: Colours, typefaces, logo and video style in one document, so your brand always looks like itself.
+          - generic [ref=f2e98]: Like ours
+    - generic [ref=f2e99]:
+      - generic [ref=f2e100]:
+        - heading "How we work" [level=2] [ref=f2e101]
+        - paragraph [ref=f2e102]: Four steps, always the same. And the last one never ends.
+      - list [ref=f2e104]:
+        - listitem [ref=f2e105]:
+          - heading "We listen" [level=3] [ref=f2e106]
+          - paragraph [ref=f2e107]: We set up a call and you tell us about your brand, what you do and who you want to reach.
+        - listitem [ref=f2e108]:
+          - heading "We propose" [level=3] [ref=f2e109]
+          - paragraph [ref=f2e110]: We show you a clear idea before we produce anything.
+        - listitem [ref=f2e111]:
+          - heading "We make" [level=3] [ref=f2e112]
+          - paragraph [ref=f2e113]: Videos, websites and social content, with that idea as the common thread.
+        - listitem [ref=f2e114]:
+          - heading "We keep going" [level=3] [ref=f2e115]
+          - paragraph [ref=f2e116]: We publish, see what works and adjust. Your brand never stops.
+    - generic [ref=f2e117]:
+      - generic [ref=f2e118]:
+        - heading "Let’s talk" [level=2] [ref=f2e119]
+        - paragraph [ref=f2e120]: We set up a call, you tell us what your brand needs and we tell you how we’d do it. No strings attached.
+        - link "Book a call" [ref=f2e121] [cursor=pointer]:
+          - /url: mailto:hola@endlesx.com?subject=I%27d%20like%20to%20book%20a%20call&body=Hi%2C%20I%27m%20...%0A%0AMy%20brand%3A%20%0AWhat%20I%20need%20(video%2C%20website%2C%20social%20media...)%3A%20%0AA%20good%20time%20for%20the%20call%3A%20%0AMy%20phone%20number%3A%20
+      - generic [ref=f2e123]: ENDLES
+  - contentinfo [ref=f2e129]:
+    - generic [ref=f2e130]: © 2026 EndlesX
+    - generic [ref=f2e131]: Video / Web / Social
