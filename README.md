@@ -10,6 +10,14 @@ Sin build: se puede subir tal cual a Netlify, Vercel, GitHub Pages o cualquier h
 **Por qué:** es una sola página sin panel ni base de datos; todo el peso está en las animaciones
 de scroll y en que cargue rápido. Next.js no aportaría nada aquí.
 
+## Publicación
+GitHub Pages (gratis), repo público `manuelgallegorodriguez99/endlesx-web` (solo esta carpeta),
+dominio `endlesx.com` (archivo `CNAME`). DNS en GoDaddy. Para actualizar la web:
+
+```bash
+cd 04-Sitio-Web && git add -A && git commit -m "Cambios" && git push
+```
+
 ## Ver en local
 Las fuentes no cargan abriendo el archivo con doble clic (`file://`), hay que servirlo:
 
@@ -38,6 +46,6 @@ Con "reducir movimiento" activado en el sistema no se crea ninguna animación: t
 - Enlace real del botón "Reservar llamada" (Calendly, Cal.com o `tel:`); de momento apunta a `#contacto` (no hace nada).
 - Fotos reales en las tarjetas de Vídeo y Web (ahora son de muestra, `assets/img/`).
 - Enlaces a redes en el pie.
-- `og:image` y dominio.
+- `og:image` (1200x630).
 - Los textos de "Cómo trabajamos" (Escuchamos / Proponemos / Hacemos / Seguimos) son una
   propuesta: revisar que describen cómo trabaja Manuel de verdad.
