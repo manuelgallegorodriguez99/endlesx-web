@@ -1,0 +1,141 @@
+/* EndlesX. Estilos de la web (ver 03-Manual-de-Marca/guia-de-marca.html) */
+
+@font-face { font-family: "Bricolage Grotesque"; src: url("../fonts/BricolageGrotesque-Variable.woff2") format("woff2"); font-weight: 200 800; font-stretch: 75% 100%; font-display: swap; }
+@font-face { font-family: "DM Mono"; font-weight: 400; src: url("../fonts/DMMono-Regular.woff2") format("woff2"); font-display: swap; }
+@font-face { font-family: "DM Mono"; font-weight: 500; src: url("../fonts/DMMono-Medium.woff2") format("woff2"); font-display: swap; }
+
+:root {
+  --papel: #f3f3ef;
+  --papel-claro: #fbfbf8;
+  --tinta: #0d0d0e;
+  --amarillo: #ffd32c;
+  --gris: #55554f;
+  --linea: #d9d9d3;
+  --gutter: clamp(20px, 5vw, 80px);
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-text-size-adjust: 100%; }
+body { background: var(--papel); color: var(--tinta); font: 400 18px/1.5 "Bricolage Grotesque", system-ui, sans-serif; overflow-x: clip; }
+img { display: block; width: 100%; height: 100%; object-fit: cover; }
+a { color: inherit; }
+.wrap { padding-left: var(--gutter); padding-right: var(--gutter); }
+
+/* Titulares de cartel */
+h1, h2, .card h3, .steps h3 {
+  font-weight: 800; font-variation-settings: "wdth" 75, "opsz" 96; text-transform: uppercase; line-height: .86; letter-spacing: -.01em;
+}
+h2 { font-size: clamp(56px, 9vw, 150px); }
+
+/* ===== Logo (escala con --s) ===== */
+.lg { --s: 100px; display: inline-flex; align-items: center; text-decoration: none; }
+.lg .w { display: inline-flex; font: 800 var(--s)/.8 "Bricolage Grotesque"; font-variation-settings: "wdth" 75, "opsz" 96; letter-spacing: -.02em; }
+.lg .tx { position: relative; flex: none; width: calc(var(--s) * .765); height: calc(var(--s) * .82); margin-left: calc(var(--s) * .07); }
+.lg .tx-in { position: absolute; inset: 0; }
+.lg .tx i { position: absolute; left: 50%; top: 50%; width: calc(var(--s) * 1.12); height: calc(var(--s) * .26); margin: calc(var(--s) * -.13) 0 0 calc(var(--s) * -.56); background: var(--x, var(--amarillo));
+  clip-path: polygon(0 6%, 3% 0, 6% 9%, 9% 1%, 12% 7%, 100% 0, 97% 94%, 100% 100%, 94% 92%, 91% 100%, 88% 93%, 0 100%, 3% 50%); }
+.lg .tx i:first-child { transform: rotate(-52deg); }
+.lg .tx i:last-child { transform: rotate(52deg); }
+.lg.edge .tx { filter: drop-shadow(max(1.5px, calc(var(--s) * .02)) max(1.5px, calc(var(--s) * .02)) 0 var(--tinta)); }
+
+/* ===== Recursos ===== */
+.tape { position: absolute; left: 50%; top: -16px; width: 130px; height: 34px; margin-left: -65px; background: var(--amarillo); z-index: 2;
+  clip-path: polygon(0 10%, 5% 0, 100% 8%, 96% 100%, 100% 92%, 2% 100%); filter: drop-shadow(2px 2px 0 var(--tinta)); }
+.tape-ink { background: var(--tinta); filter: none; }
+.strike { position: relative; display: inline-block; color: #9a9a94; }
+.strike::after { content: ""; position: absolute; left: -3%; top: 44%; height: .14em; width: 106%; background: var(--amarillo);
+  transform: rotate(-4deg) scaleX(var(--k, 1)); transform-origin: left center; filter: drop-shadow(.025em .025em 0 var(--tinta)); }
+.strike.ink::after { background: var(--tinta); filter: none; }
+.manifesto .strike { color: rgba(13,13,14,.45); }
+
+.btn { display: inline-block; font: 700 17px/1 "Bricolage Grotesque"; text-decoration: none; background: var(--tinta); color: var(--papel); padding: 18px 26px; white-space: nowrap;
+  transition: transform 160ms var(--ease-out), box-shadow 160ms var(--ease-out); }
+.btn:active { transform: scale(.97); }
+.btn:focus-visible, .nav a:focus-visible { outline: 3px solid var(--amarillo); outline-offset: 3px; }
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover { transform: translate(-3px, -3px); box-shadow: 5px 5px 0 var(--amarillo); }
+  .btn:active { transform: translate(-1px, -1px) scale(.97); }
+}
+
+/* ===== Navegación ===== */
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: 68px; display: flex; align-items: center; justify-content: space-between; padding: 0 var(--gutter); background: var(--papel); transition: background-color 200ms ease; }
+.nav.on-yellow { background: var(--amarillo); }
+.nav.on-yellow .lg { --x: var(--tinta); }
+.nav ul { list-style: none; display: flex; gap: clamp(16px, 2.4vw, 36px); font: 400 14px "DM Mono", monospace; }
+.nav ul a { text-decoration: none; padding: 6px 0; background: linear-gradient(var(--tinta), var(--tinta)) left bottom / 0 2px no-repeat; transition: background-size 200ms var(--ease-out); }
+@media (hover: hover) and (pointer: fine) { .nav ul a:hover { background-size: 100% 2px; } }
+@media (max-width: 760px) { .hide-sm { display: none; } }
+
+/* ===== Cabecera ===== */
+.hero { position: relative; height: 100svh; min-height: 560px; display: grid; grid-template-rows: 1fr auto; gap: 4vh; padding: 96px var(--gutter) clamp(28px, 5vh, 56px); overflow: hidden; }
+.hero-logo { align-self: end; }
+.hero-logo .lg { --s: clamp(90px, 17vw, 300px); }
+.hero-logo .w span { display: inline-block; }
+.hero-bottom { display: grid; grid-template-columns: 1.25fr 1fr; gap: 40px; align-items: end; border-top: 2px solid var(--tinta); padding-top: 22px; }
+.hero h1 { font-size: clamp(44px, 6.4vw, 108px); }
+.hero-side { display: flex; flex-direction: column; align-items: flex-start; gap: 22px; }
+.hero-side p { font-size: clamp(17px, 1.4vw, 21px); max-width: 30ch; color: var(--gris); }
+.hero .strike::after { animation: draw 700ms 900ms var(--ease-out) both; }
+@keyframes draw { from { transform: rotate(-4deg) scaleX(0); } }
+@media (max-width: 760px) { .hero-bottom { grid-template-columns: 1fr; gap: 22px; } }
+
+/* ===== Manifiesto ===== */
+.manifesto { background: var(--amarillo); padding: clamp(100px, 18vh, 200px) var(--gutter); min-height: 100svh; display: flex; align-items: center; }
+.manifesto-text { font-weight: 700; font-size: clamp(34px, 5.2vw, 88px); line-height: 1.02; letter-spacing: -.02em; max-width: 18ch; color: var(--tinta); }
+.manifesto-text .mw { display: inline-block; }
+
+/* ===== Qué hacemos ===== */
+.services { min-height: 100svh; padding: clamp(90px, 12vh, 120px) 0 clamp(40px, 6vh, 70px); display: flex; flex-direction: column; justify-content: center; gap: clamp(28px, 4.5vh, 52px); overflow: hidden; }
+.services h2 { font-size: clamp(56px, 7.5vw, 120px); }
+.services-head p, .process-head p, .contact p { font-size: clamp(18px, 1.5vw, 22px); color: var(--gris); max-width: 46ch; margin-top: 18px; }
+.svc-track { display: flex; gap: clamp(28px, 3vw, 48px); width: max-content; padding: 20px var(--gutter) 10px; align-items: stretch; }
+.card { position: relative; width: clamp(300px, 30vw, 460px); min-height: min(54vh, 500px); padding: 30px 30px 28px; display: flex; flex-direction: column; gap: 16px;
+  box-shadow: 0 14px 38px rgba(13,13,14,.12); transition: transform 300ms var(--ease-out); }
+.card:nth-child(odd) { transform: rotate(-1.6deg); }
+.card:nth-child(even) { transform: rotate(1.2deg); }
+@media (hover: hover) and (pointer: fine) { .card:hover { transform: rotate(0deg) translateY(-6px); } }
+.card-paper { background: var(--papel-claro); border: 1px solid var(--linea); }
+.card-ink { background: var(--tinta); color: var(--papel); }
+.card-yellow { background: var(--amarillo); }
+.card h3 { font-size: clamp(38px, 3.6vw, 58px); }
+.card h3.big { font-size: clamp(52px, 5vw, 84px); margin-top: auto; }
+.card p { font-size: 17px; line-height: 1.5; color: var(--gris); }
+.card-ink p { color: #bdbdb7; }
+.card-yellow p { color: #2e2a1a; }
+.card .meta { font: 400 13px "DM Mono", monospace; margin-top: auto; padding-top: 14px; border-top: 1px solid currentColor; opacity: .75; }
+.card-photo { height: clamp(120px, 19vh, 200px); background: #fff; padding: 8px 8px 22px; flex: none; }
+.card-ink .card-photo { background: var(--papel); }
+.card-photo img { filter: grayscale(1) contrast(1.12); }
+.card-guide { flex: 1; display: grid; place-items: center; background: var(--papel); border: 1px dashed #b5b5ae; min-height: 150px; }
+@media (max-width: 899px) {
+  .svc-track { flex-direction: column; width: auto; gap: 46px; }
+  .card { width: 100%; min-height: 0; }
+}
+
+/* ===== Cómo trabajamos ===== */
+.process { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(40px, 6vw, 120px); padding-top: clamp(100px, 16vh, 180px); padding-bottom: clamp(100px, 16vh, 180px); }
+.process-head { position: sticky; top: 120px; align-self: start; }
+.steps { position: relative; }
+.steps ol { list-style: none; }
+.steps-line { position: absolute; left: 0; top: 0; bottom: 0; width: 14px; background: var(--amarillo); transform-origin: top; filter: drop-shadow(2px 2px 0 var(--tinta)); }
+.steps li { padding: 0 0 clamp(60px, 10vh, 110px) clamp(40px, 5vw, 80px); }
+.steps li:last-child { padding-bottom: 0; }
+.steps h3 { font-size: clamp(48px, 6vw, 96px); }
+.steps p { font-size: clamp(18px, 1.5vw, 22px); color: var(--gris); margin-top: 14px; max-width: 34ch; }
+@media (max-width: 760px) { .process { grid-template-columns: 1fr; } .process-head { position: static; } }
+
+/* ===== Contacto ===== */
+.contact { padding-top: clamp(100px, 16vh, 180px); overflow: hidden; }
+.contact h2 { font-size: clamp(80px, 16vw, 280px); }
+.contact .btn { margin-top: 30px; }
+.contact-logo { padding: clamp(80px, 14vh, 160px) var(--gutter) clamp(50px, 8vh, 90px); }
+.contact-logo .lg { --s: clamp(80px, 21vw, 390px); }
+
+.footer { display: flex; justify-content: space-between; gap: 20px; padding-top: 24px; padding-bottom: 28px; border-top: 2px solid var(--tinta); font: 400 14px "DM Mono", monospace; }
+
+/* Sin animaciones: todo quieto y visible */
+@media (prefers-reduced-motion: reduce) {
+  .hero .strike::after { animation: none; }
+  .btn, .card, .nav ul a { transition: none; }
+}
