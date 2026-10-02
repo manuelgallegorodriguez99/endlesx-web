@@ -129,9 +129,6 @@ h2 { font-size: clamp(56px, 9vw, 150px); }
 .contact { padding-top: clamp(100px, 16vh, 180px); overflow: hidden; }
 .contact h2 { font-size: clamp(80px, 16vw, 280px); }
 .contact .btn { margin-top: 30px; }
-.contact .contact-mail { font: 400 14px/1.5 "DM Mono", monospace; margin-top: 22px; max-width: none; overflow-wrap: anywhere; }
-.contact-mail a { color: var(--tinta); text-underline-offset: 3px; }
-.contact-mail a:focus-visible { outline: 3px solid var(--amarillo); outline-offset: 3px; }
 .contact-logo { padding: clamp(80px, 14vh, 160px) var(--gutter) clamp(50px, 8vh, 90px); }
 .contact-logo .lg { --s: clamp(80px, 21vw, 390px); }
 

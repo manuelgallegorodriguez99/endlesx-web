@@ -34,7 +34,7 @@ cd 04-Sitio-Web && python3 -m http.server 8765
 3. **Qué hacemos.** Cinco carteles pegados con cinta que pasan en horizontal (escritorio) o se
    apilan (móvil, menos de 900 px). La cinta de cada cartel se pega al aparecer.
 4. **Cómo trabajamos.** Una cinta amarilla se desenrolla junto a los cuatro pasos.
-5. **Contacto: "¿Hablamos?".** Botón "Reservar llamada" (abre un email a manuelgallegorodriguez99@gmail.com con asunto y guion) y el correo visible debajo. La X vuelve volando y se pega al logo
+5. **Contacto: "¿Hablamos?".** Botón "Reservar llamada" (abre un email a hola@endlesx.com con asunto y guion). hola@ es un reenvío gratuito de ImprovMX a Gmail. La X vuelve volando y se pega al logo
    final. Sin fin.
 
 La web no muestra precios (decisión de Manuel): todo se cierra en una llamada.
