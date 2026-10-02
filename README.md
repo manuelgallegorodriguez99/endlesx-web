@@ -34,7 +34,7 @@ cd 04-Sitio-Web && python3 -m http.server 8765
 3. **Qué hacemos.** Cinco carteles pegados con cinta que pasan en horizontal (escritorio) o se
    apilan (móvil, menos de 900 px). La cinta de cada cartel se pega al aparecer.
 4. **Cómo trabajamos.** Una cinta amarilla se desenrolla junto a los cuatro pasos.
-5. **Contacto: "¿Hablamos?".** Botón "Reservar llamada". La X vuelve volando y se pega al logo
+5. **Contacto: "¿Hablamos?".** Botón "Reservar llamada" (abre un email a manuelgallegorodriguez99@gmail.com con asunto y guion) y el correo visible debajo. La X vuelve volando y se pega al logo
    final. Sin fin.
 
 La web no muestra precios (decisión de Manuel): todo se cierra en una llamada.
@@ -43,8 +43,6 @@ El menú se pone amarillo (y la X negra) mientras el fondo es amarillo.
 Con "reducir movimiento" activado en el sistema no se crea ninguna animación: todo se ve quieto.
 
 ## Pendiente (TODO en el código)
-- Enlace real del botón "Reservar llamada" (Calendly, Cal.com o `tel:`); de momento apunta a `#contacto` (no hace nada).
-- Fotos reales en las tarjetas de Vídeo y Web (ahora son de muestra, `assets/img/`).
 - Enlaces a redes en el pie.
 - `og:image` (1200x630).
 - Los textos de "Cómo trabajamos" (Escuchamos / Proponemos / Hacemos / Seguimos) son una
